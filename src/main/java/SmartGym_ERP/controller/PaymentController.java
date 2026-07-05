@@ -1,0 +1,26 @@
+package SmartGym_ERP.controller;
+
+import SmartGym_ERP.entity.Payment;
+import SmartGym_ERP.service.PaymentService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+import java.util.List;
+
+@RestController
+@RequestMapping("/api/payments")
+@CrossOrigin
+public class PaymentController {
+
+    @Autowired
+    private PaymentService paymentService;
+
+    @PostMapping
+    public Payment createPayment(@RequestBody Payment payment) {
+        return paymentService.savePayment(payment);
+    }
+
+    @GetMapping
+    public List<Payment> getAllPayments() {
+        return paymentService.getAllPayments();
+    }
+}
