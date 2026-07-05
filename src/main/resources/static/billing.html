@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartGym ERP - Billing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>SmartGym ERP</h2>
+    <ul>
+        <li><a href="index.html">🏋️‍♂️ Dashboard</a></li>
+        <li><a href="members.html">👥 Members</a></li>
+        <li><a href="packages.html">📦 Packages</a></li>
+        <li><a href="attendance.html">📅 Attendance</a></li>
+        <li><a href="#" class="active">💳 Billing</a></li>
+    </ul>
+</div>
+
+<div class="main-content">
+    <div class="header">
+        <h1>Billing & Payments</h1>
+        <p>Generate invoices and keep track of gym membership payments.</p>
+    </div>
+
+    <div class="form-container">
+        <h2>Accept New Payment</h2>
+        <form>
+            <div class="form-group">
+                <label>Member ID:</label>
+                <input type="text" placeholder="Enter Member ID (e.g., M001)" required>
+            </div>
+            <div class="form-group">
+                <label>Paid Amount (Rs.):</label>
+                <input type="number" placeholder="Enter amount received" required>
+            </div>
+            <div class="form-group">
+                <label>Payment Method:</label>
+                <select>
+                    <option>Cash</option>
+                    <option>Card</option>
+                    <option>Bank Transfer</option>
+                </select>
+            </div>
+            <button type="submit" class="btn">Process Payment</button>
+        </form>
+    </div>
+
+    <br><br>
+
+    <div class="table-container">
+        <h2>Recent Transactions</h2>
+        <table class="member-table">
+            <thead>
+            <tr>
+                <th>Invoice ID</th>
+                <th>Member ID</th>
+                <th>Amount</th>
+                <th>Method</th>
+                <th>Status</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>#INV-1001</td>
+                <td>#001 (Sachi)</td>
+                <td>Rs. 32,000</td>
+                <td>Card</td>
+                <td><span class="status active-status">Paid</span></td>
+            </tr>
+            <tr>
+                <td>#INV-1002</td>
+                <td>#002 (Amal)</td>
+                <td>Rs. 3,500</td>
+                <td>Cash</td>
+                <td><span class="status active-status">Paid</span></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>

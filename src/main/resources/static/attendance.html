@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartGym ERP - Attendance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>SmartGym ERP</h2>
+    <ul>
+        <li><a href="index.html">🏋️‍♂️ Dashboard</a></li>
+        <li><a href="members.html">👥 Members</a></li>
+        <li><a href="packages.html">📦 Packages</a></li>
+        <li><a href="#" class="active">📅 Attendance</a></li>
+        <li><a href="billing.html">💳 Billing</a></li>
+    </ul>
+</div>
+
+<div class="main-content">
+    <div class="header">
+        <h1>Gym Attendance</h1>
+        <p>Mark daily attendance and track member check-ins.</p>
+    </div>
+
+    <div class="form-container">
+        <h2>Mark Daily Attendance</h2>
+        <form>
+            <div class="form-group">
+                <label>Member ID:</label>
+                <input type="text" placeholder="Enter Member ID (e.g., M001)" required>
+            </div>
+            <button type="submit" class="btn">Mark Attendance</button>
+        </form>
+    </div>
+
+    <br><br>
+
+    <div class="table-container">
+        <h2>Today's Attendance List</h2>
+        <table class="member-table">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Member Name</th>
+                <th>Check-in Time</th>
+                <th>Status</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>#001</td>
+                <td>Sachi</td>
+                <td>06:30 AM</td>
+                <td><span class="status active-status">Present</span></td>
+            </tr>
+            <tr>
+                <td>#002</td>
+                <td>Amal Perera</td>
+                <td>07:15 AM</td>
+                <td><span class="status active-status">Present</span></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
