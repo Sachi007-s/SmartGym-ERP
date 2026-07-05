@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartGym ERP - Members</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>SmartGym ERP</h2>
+    <ul>
+        <li><a href="index.html">🏋️‍♂️ Dashboard</a></li>
+        <li><a href="#" class="active">👥 Members</a></li>
+        <li><a href="#">📦 Packages</a></li>
+        <li><a href="#">📅 Attendance</a></li>
+        <li><a href="#">💳 Billing</a></li>
+    </ul>
+</div>
+
+<div class="main-content">
+    <div class="header">
+        <h1>Member Management</h1>
+        <p>Add new members and view registered member details.</p>
+    </div>
+
+    <div class="form-container">
+        <h2>Add New Member</h2>
+        <form>
+            <div class="form-group">
+                <label>Full Name:</label>
+                <input type="text" placeholder="Enter full name" required>
+            </div>
+            <div class="form-group">
+                <label>Email Address:</label>
+                <input type="email" placeholder="Enter email" required>
+            </div>
+            <div class="form-group">
+                <label>Select Package:</label>
+                <select>
+                    <option>Monthly - Rs. 3,500</option>
+                    <option>6 Months - Rs. 18,000</option>
+                    <option>Yearly - Rs. 32,000</option>
+                </select>
+            </div>
+            <button type="submit" class="btn">Register Member</button>
+        </form>
+    </div>
+
+    <br><br>
+
+    <div class="table-container">
+        <h2>Registered Members</h2>
+        <table class="member-table">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Package</th>
+                <th>Status</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>#001</td>
+                <td>Sachi</td>
+                <td>sachi@gmail.com</td>
+                <td>Yearly</td>
+                <td><span class="status active-status">Active</span></td>
+            </tr>
+            <tr>
+                <td>#002</td>
+                <td>Amal Perera</td>
+                <td>amal@gmail.com</td>
+                <td>Monthly</td>
+                <td><span class="status active-status">Active</span></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
